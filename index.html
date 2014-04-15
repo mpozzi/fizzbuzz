@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<link href="html5form.css" rel="stylesheet" type="text/css" /> 
+		 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="http://html5form.googlecode.com/svn/trunk/jquery.html5form-1.5-min.js"></script>
+		
+	</head>
+	<body style="background-color: #dad9d2;">
+
+		<form action="index.html" method="post" id="form_test" style="width: 400px;margin-left: auto;margin-right: auto;">
+		    <fieldset>
+		        <legend>Fizz Buzz</legend>
+		        <fieldset>
+		        	<legend>Parametros</legend>
+			        <div>
+				        <label for="number">Números limites (0-100)</label>
+				        <input type="number" name="param1" id="param1" title="Limite 1" maxlength="60" placeholder="" autocomplete="off" min="0" max="100" required/> -
+				        <input type="number" name="param2" id="param2" title="Limite 2" maxlength="40" placeholder="" autocomplete="off" min="0" max="100" required/>
+			        </div>
+			        <div>
+				        <label for="mul">Multiplos</label>
+				        <input type="number" name="mul1" id="mult1" title="Multiplo 1"  maxlength="4" placeholder="" autocomplete="off" required/> -
+				        <input type="number" name="mul2" id="mult2" title="Multiplo 2"  maxlength="4" placeholder="" autocomplete="off" required/> -
+				        <input type="number" name="mul3" id="mult3" title="Multiplo 3"  maxlength="4" placeholder="" autocomplete="off" required/>
+			        </div>
+			        <div>
+				        <label for="mul">Identificadores</label>
+				        <input type="text" name="ident1" id="ident1" title="Identificador 1"  maxlength="10" placeholder="fizz" autocomplete="off" required/> -
+				        <input type="text" name="ident2" id="ident2" title="Identificador 2"  maxlength="10" placeholder="buzz" autocomplete="off" required/>
+			        </div>
+	         		<div>
+				        <input type="submit" value="Obtener Resultado" class="submit" onclick="muestreo()"/>
+	         		</div>
+			     </fieldset>   
+		         <fieldset>
+		        	<legend>Configuraciones</legend>
+			        <div>
+				         <input class='button' type="button" value="Recuperar" onclick="recuperar()"/><input class='button' type="button" value="Borrar" onclick="borrar()"/><input class='button' type="button" value="Almacenar" onclick="guardar()"/>
+			        </div>
+		        </fieldset>
+		    
+		    </fieldset>
+		</form>
+		<script src="fizzbuzz.js"></script>
+	</body>
+
+</html>
